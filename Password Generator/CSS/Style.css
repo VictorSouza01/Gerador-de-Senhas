@@ -1,0 +1,195 @@
+body{
+    background: rgb(8, 8, 8);
+    display: block;
+}
+#Centro{
+    position: relative;
+    height: 80vh;
+
+}
+#LogoPass{
+    position: absolute;
+    height: 150px;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    margin-left: -210px;
+    margin-top: -200px;
+}
+#tituloG{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -245px;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    width: 360px;
+}
+#TituloBaixo{
+    color: white;
+    position: absolute;
+    font-size: 25px;
+    top: 50%;
+    left: 50%;
+    margin-top: 1px;
+    margin-left: -110px;
+    color: white;
+    text-align: center;
+}
+#IMGPASS{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+
+#SaidaDados{
+    position: absolute;
+
+    width: 500px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: 100px;
+
+}
+#txt_senha{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -40px;
+    width: 400px;
+    height: 20px;
+
+    border: 1px solid white;
+    border-radius: 7px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+#txt_senha::placeholder{
+    text-align: center;
+}
+#btn_Gerar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 58px;
+    margin-top: 0px;
+
+    cursor: pointer;
+    background: none;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 150px;
+    height: 25px;
+}
+#btn_Gerar:hover{
+    background: rgba(255, 255, 255, 0.137);
+    color: white;
+    font-weight: bold;
+    border: 2px solid white ;
+}
+#btn_Gerar:active{
+    background: red;
+}
+#btn_copia{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -10px;
+
+    background: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+}
+#btn_copia:hover{
+    background: white;
+    border: 2px solid rgb(80, 57, 57);
+}
+
+#MostrarTexto:hover #TextoApresentado{
+    opacity: 1;
+    font-size: 14px;
+}
+#TextoApresentado{
+    position: absolute;
+    width: 150px;
+    height: 17px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-top: 0px;
+    margin-left: -159px;
+
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: rgb(255, 255, 255);
+    color: black;
+    opacity: 0;
+}
+
+#entradaRadio{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: 0px;
+    border-radius: 10px;
+    width: 610px;
+    height: 25px;
+
+    text-align: center;
+}
+.TextoRadio{
+    position: relative;
+    color: white;
+    font-size: 17px;
+    top: -30%;
+    margin-left: 0px;
+}
+.RadioMetodo{
+    cursor: pointer;
+    border: 0px;
+    width: 18px;
+    height: 2em;
+}
+
+#Quantidade{
+    position: absolute;
+    width: 200px;
+    height: 45px;
+
+    top: 50%;
+    left: 50%;
+    margin-top: 50px;
+    margin-left: -100px;
+}
+#qtd{
+    text-align: center;
+    width: 50px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.466);
+    color: white;
+}
+#RangeNum{
+    position: relative;
+    cursor: pointer;
+    top: 15%;
+    margin-top: 0px;
+}
+#TituloNum{
+    position: relative;
+    color: white;
+    left: 50%;
+    margin-left: -85px;
+}

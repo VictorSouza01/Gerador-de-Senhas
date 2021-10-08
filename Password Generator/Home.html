@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gerador de Senhas Online</title>
+        <link rel="Shortcut icon" href="IMGS/PassIcon.png">
+        <link rel="stylesheet" href="CSS/Style.css">
+
+
+    </head>
+    <body>
+        <div id="Centro">    
+            <div id="LogoPass">    
+                <h1 id="tituloG">GERADOR DE SENHAS</h1>
+                <h2 id="TituloBaixo">ONLINE</h2>
+                <img src="IMGS/PassIcon.png" width="70px" id="IMGPASS" title="Password Icon">
+            </div>
+
+            
+            <!--Saida de dados e ou entrada-->
+            <div id="entradaRadio">    
+                <input type="radio" name="Metodo" class="RadioMetodo" id="Numeros" value="Números"><span class="TextoRadio" title="APENAS NÚMEROS">Números</span>
+                <input type="radio" name="Metodo" class="RadioMetodo" id="caracteresS" value="Caracteres especiais"><span class="TextoRadio" title="LETRAS + CARACTERES ESPECIAIS">Caracteres especiais</span>
+                <input type="radio" name="Metodo" class="RadioMetodo" id="letras" value="Letras maiusculas e minusculas"><span class="TextoRadio" title="LETRAS MAIUSCULAS E MINUSCULAS">Letras maiusculas e minusculas</span>
+                <input type="radio" name="Metodo" class="RadioMetodo" id="tudo" value="Tudo"><span class="TextoRadio" title="TUDO">Tudo</span>
+            </div>
+
+            <div id="SaidaDados">
+                <input type="text" maxlength="30" id="txt_senha" name="txt_senha" title="Senha" placeholder="Você pode alterar a senha que foi gerada :D">
+                <input type="button" name="btn_gerar" id="btn_Gerar" value="GERAR" title="Gerar Senha" onclick="GerarSENHA()">
+                
+                <div id="MostrarTexto">
+                    <div>
+                        <input type="image" src="IMGS/IconeCopia.png" width="25px" id="btn_copia" onclick="Copiar()">
+                    </div>
+                    
+                    <div id="TextoApresentado">
+                        <span id="TituloCopiar">COPIAR SENHA</span>
+                    </div>
+                </div>
+            </div>
+            <div id="Quantidade" title="Quantidade de caracteres">
+                <span id="TituloNum">Quantidade de caracteres</span>
+                <input type="range" min="4" max="30" step="1" value="15" oninput="MudarNum()" id="RangeNum">
+                <input type="text" name="Num_qtd" id="qtd" value="15" readonly>
+            </div>
+        </div>
+    </body>
+
+    <script
+    language="JAVASCRIPT"
+    type="text/javascript"
+    src="JS/Script.js"
+    >
+    </script>
+</html>
