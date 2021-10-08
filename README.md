@@ -15,7 +15,7 @@ Ele permite escolher quantos caracteres você quer que sua senha possua, e se vo
 <img height="26" title="Javascript" alt="Javascript" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"> &nbsp;
 <img height="26" title="Visual Studio Code" alt="Visual Studio Code" src="https://icongr.am/devicon/visualstudio-plain.svg?size=128&color=currentColor"> &nbsp;
 <br><br><b>Foto do projeto:</b><br>
-<img height="350" title="Foto do Projeto" alt="Foto Do projeto" src="IMGS/ProjetoFoto.jpg">
+<img height="350" title="Foto do Projeto" alt="Foto Do projeto" src="ProjetoFoto.jpg">
 
 </details>
 
@@ -34,5 +34,5 @@ It allows you to choose how many characters you want your password to have, and 
 <img height="26" title="Visual Studio Code" alt="Visual Studio Code" src="https://icongr.am/devicon/visualstudio-plain.svg?size=128&color=currentColor"> &nbsp;
 
 <br><br><b>Project photo:</b><br>
-<img height="350" title="Project photo" alt="Project photo" src="IMGS/ProjetoFoto.jpg">
+<img height="350" title="Project photo" alt="Project photo" src="ProjetoFoto.jpg">
 </details>
