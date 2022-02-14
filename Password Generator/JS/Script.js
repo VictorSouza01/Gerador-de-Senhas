@@ -20,7 +20,6 @@ function MudarNum(){
 }
 function Copiar(){
     var senha = document.getElementById("txt_senha").value;
-
     navigator.clipboard.writeText(senha);
 }
 
@@ -29,7 +28,6 @@ function GerarSENHA(){
     var qtdR = document.getElementById("qtd").value;
     var passwordLength = qtdR;
     var password = "";
-
 
     if (qtdR>=20){
         document.getElementById('txt_senha').style.color = "green"
@@ -46,37 +44,22 @@ function GerarSENHA(){
 
     if (document.getElementById("Numeros").checked == true){
         chars = "0123456789"
-        for (var i = 0; i < passwordLength; i++) {
-            var randomNumber = Math.floor(Math.random() * chars.length);
-            password += chars.substring(randomNumber, randomNumber + 1);
-          }
-          document.getElementById('txt_senha').value = password
     }
     else if(document.getElementById("caracteresS").checked == true){
         chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJLMNOPQRSTUVWXYZ!@#$%^&*()+?><:{}[]"
-        for (var i = 0; i < passwordLength; i++) {
-            var randomNumber = Math.floor(Math.random() * chars.length);
-            password += chars.substring(randomNumber, randomNumber + 1);
-          }
-          document.getElementById('txt_senha').value = password
     }
     else if (document.getElementById("letras").checked == true){
         chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJLMNOPQRSTUVWXYZ"
-        for (var i = 0; i < passwordLength; i++) {
-            var randomNumber = Math.floor(Math.random() * chars.length);
-            password += chars.substring(randomNumber, randomNumber + 1);
-          }
-          document.getElementById('txt_senha').value = password
     }
     else if(document.getElementById("tudo").checked == true){
         chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJLMNOPQRSTUVWXYZ!@#$%^&*()+?><:{}[]"
-        for (var i = 0; i < passwordLength; i++) {
-            var randomNumber = Math.floor(Math.random() * chars.length);
-            password += chars.substring(randomNumber, randomNumber + 1);
-          }
-          document.getElementById('txt_senha').value = password
     }
     else{
         alert("SELECIONE UM MÉTODO")
     }
+    for (var i = 0; i < passwordLength; i++) {
+        var randomNumber = Math.floor(Math.random() * chars.length);
+        password += chars.substring(randomNumber, randomNumber + 1);
+      }
+      document.getElementById('txt_senha').value = password
 }
